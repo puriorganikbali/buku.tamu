@@ -3,68 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Web App - Dimsum Maknyus</title>
+    <title>Buku Tamu</title>
+
+    <link rel="icon" type="image/png" href="SBU.png"> 
     <style>
-        /* Menghilangkan margin bawaan browser */
+        /* Menghilangkan margin dan membuat tampilan full screen */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
             width: 100%;
             overflow: hidden;
-            background-color: #f8f9fa;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #ffffff;
         }
 
-        /* Container untuk Iframe */
-        .app-container {
+        .container {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
-        /* Styling Iframe GAS */
         iframe {
             width: 100%;
             height: 100%;
             border: none;
-            z-index: 2;
-        }
-
-        /* Loading Spinner */
-        .loader {
-            position: absolute;
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #3498db;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            z-index: 1;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            display: block;
         }
     </style>
 </head>
 <body>
 
-    <div class="app-container">
-        <div class="loader"></div>
-        
+    <div class="container">
         <iframe 
-            src="https://script.google.com/macros/s/AKfycbxI7RSATXQBT5OwKJ3HDCLo7lbrVB4QGhqPNLaSbJ2GXDG7dlhgx9UGWq9VKFeCkf7K/exec" 
-            allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+            src="https://script.google.com/macros/s/AKfycbxMmBzK2HYX9R2C8cfHLfoin2ku6SLdVV6P_MAR6PozdaZ1M9Q6toTRSmx61VPfhLC0xQ/exec" 
+            allow="geolocation; microphone; camera; encrypted-media;"
             allowfullscreen="true">
         </iframe>
     </div>
 
 </body>
 </html>
+
+
+
+
